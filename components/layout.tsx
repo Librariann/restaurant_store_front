@@ -5,7 +5,7 @@ type Props = {
 function Layout({ children }: Props) {
   return (
     <>
-      <div className="w-full p-0">{children}</div>
+      <div className="p-0 font-sans">{children}</div>
     </>
   );
 }

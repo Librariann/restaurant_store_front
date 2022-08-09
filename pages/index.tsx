@@ -1,5 +1,13 @@
+import Contents from "../components/main/contents";
+import Nav from "../components/nav";
+
 function Home() {
-  return <div>Hello World!</div>;
+  return (
+    <>
+      <Nav />
+      <Contents />
+    </>
+  );
 }
 
 export default Home;
