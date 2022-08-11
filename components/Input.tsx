@@ -7,7 +7,10 @@ type Props = {
   placeholder?: React.HTMLInputTypeAttribute;
   autoComplete?: React.HTMLInputTypeAttribute;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   value?: React.HTMLInputTypeAttribute;
+  accept?: string;
 };
 
 const InputStyle = styled.input`
@@ -36,7 +39,10 @@ function Input({
   placeholder,
   autoComplete,
   onChange,
+  onKeyUp,
+  onKeyDown,
   value,
+  accept,
 }: Props) {
   return (
     <InputStyle
@@ -45,7 +51,10 @@ function Input({
       placeholder={placeholder}
       autoComplete={autoComplete}
       onChange={onChange}
+      onKeyUp={onKeyUp}
+      onKeyDown={onKeyDown}
       value={value}
+      accept={accept}
     />
   );
 }

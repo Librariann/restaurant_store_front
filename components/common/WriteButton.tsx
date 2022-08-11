@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -16,12 +17,10 @@ const Hr = styled.hr`
 `;
 
 function WriteButton() {
-  const moveWritePage = () => {
-    alert("이동 했습니다");
-  };
+  const router = useRouter();
   return (
     <div className="float-right mr-20">
-      <Button onClick={moveWritePage}>
+      <Button onClick={() => router.push("/write")}>
         <Hr />
         <Hr className="rotate-90" />
       </Button>

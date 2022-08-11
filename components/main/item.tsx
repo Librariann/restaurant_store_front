@@ -46,7 +46,9 @@ function Item() {
             맛집
           </li>
           <Address>서울특별시 마포구 와우산로29라길 7</Address>
-          <Date>2022/01/01 12:12:12</Date>
+          <Date>
+            마지막 방문일자: 2022/01/01 <span> + </span>
+          </Date>
           <li>* * * * *</li>
         </ul>
       </div>

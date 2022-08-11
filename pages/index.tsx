@@ -1,10 +1,13 @@
 import Contents from "../components/main/contents";
-import Nav from "../components/nav";
+import NavBar from "../components/navBar";
+import Seo from "../components/Seo";
+import axios from "axios";
 
 function Home() {
   return (
     <>
-      <Nav />
+      <Seo title="main" />
+      <NavBar />
       <Contents />
     </>
   );

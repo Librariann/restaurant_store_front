@@ -1,9 +1,5 @@
-import Image from "next/image";
 import styled from "styled-components";
-
-const NavComponent = styled.nav`
-  background-color: #a5d6a7;
-`;
+import Image from "next/image";
 
 const Input = styled.input`
   ::placeholder {
@@ -16,14 +12,10 @@ const Wrapping = styled.div`
   display: inline-block;
 `;
 
-function Nav() {
-  const logout = () => {
-    alert("logout!");
-  };
+function Search() {
   return (
-    <NavComponent className="flex justify-around items-center w-full h-12">
-      <div></div>
-      <div className="ml-[5%] flex">
+    <>
+      <div className="flex">
         <Wrapping className="">
           <Input
             className="sm:w-80 pl-2 h-8 rounded-full"
@@ -41,14 +33,8 @@ function Nav() {
           />
         </Wrapping>
       </div>
-      <div
-        className="mr-[5%] text-white text-2xl font-extrabold"
-        onClick={logout}
-      >
-        Logout
-      </div>
-    </NavComponent>
+    </>
   );
 }
 
-export default Nav;
+export default Search;
